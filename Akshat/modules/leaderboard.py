@@ -9,10 +9,10 @@ from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandle
 from telegram.ext import CallbackQueryHandler
 from pymongo import MongoClient, ReturnDocument
 import urllib.request
-from shivu import application 
-from shivu import db, collection, user_totals_collection, user_collection, top_global_groups_collection, top_global_groups_collection, group_user_totals_collection
-from shivu import PHOTO_URL, OWNER_ID
-from shivu import sudo_users as SUDO_USERS 
+from Akshat import application 
+from Akshat import db, collection, user_totals_collection, user_collection, top_global_groups_collection, top_global_groups_collection, group_user_totals_collection
+from Akshat import PHOTO_URL, OWNER_ID
+from Akshat import sudo_users as SUDO_USERS 
 import random
 import json
 import html

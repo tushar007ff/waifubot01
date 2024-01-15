@@ -6,8 +6,8 @@ from pyrogram.types import InlineQueryResultPhoto, InputTextMessageContent
 from collections import Counter
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram import enums
-from shivu import db, collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection
-from shivu import shivuu
+from Akshat import db, collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection
+from Akshat import Akshatu
 
 
 
@@ -15,7 +15,7 @@ from shivu import shivuu
 pending_trades = {}
 
 
-@shivuu.on_message(filters.command("trade"))
+@Akshatu.on_message(filters.command("trade"))
 async def trade(client, message):
     sender_id = message.from_user.id
 
@@ -74,7 +74,7 @@ async def trade(client, message):
     await message.reply_text(f"{message.reply_to_message.from_user.mention}, do you accept this trade?", reply_markup=keyboard)
 
 
-@shivuu.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_trade", "cancel_trade"]))
+@Akshatu.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_trade", "cancel_trade"]))
 async def on_callback_query(client, callback_query):
     receiver_id = callback_query.from_user.id
 
@@ -127,7 +127,7 @@ async def on_callback_query(client, callback_query):
 pending_gifts = {}
 
 
-@shivuu.on_message(filters.command("gift"))
+@Akshatu.on_message(filters.command("gift"))
 async def gift(client, message):
     sender_id = message.from_user.id
 
@@ -174,7 +174,7 @@ async def gift(client, message):
 
     await message.reply_text(f"do You Really Wanns To Gift {message.reply_to_message.from_user.mention}?", reply_markup=keyboard)
 
-@shivuu.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_gift", "cancel_gift"]))
+@Akshatu.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_gift", "cancel_gift"]))
 async def on_callback_query(client, callback_query):
     sender_id = callback_query.from_user.id
 

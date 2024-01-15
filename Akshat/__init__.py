@@ -28,7 +28,7 @@ API_ID = os.getenv("API_ID")
 UPDATE_CHAT = os.getenv("UPDATE_CHAT")
 
 application = Application.builder().token(TOKEN).build()
-shivuu = Client(
+Akshatu = Client(
     "lmao",
     api_id=API_ID,
     api_hash=API_HASH,

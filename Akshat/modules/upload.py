@@ -8,7 +8,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 import urllib.request
 from pymongo import MongoClient, ReturnDocument
 import random
-from shivu import application, sudo_users, collection, db, CHARA_CHANNEL_ID
+from Akshat import application, sudo_users, collection, db, CHARA_CHANNEL_ID
 
 async def get_next_sequence_number(sequence_name):
     sequence_collection = db.sequences
