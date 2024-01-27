@@ -56,7 +56,7 @@ async def start(update: Update, context: CallbackContext) -> None:
             [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f'https://t.me/{SUPPORT_CHAT}'),
             InlineKeyboardButton("ᴜᴏᴅᴀᴛᴇs", url=f'https://t.me/{UPDATE_CHAT}')],
             [InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f'http://t.me/{BOT_USERNAME}?startgroup=new')],
-            [InlineKeyboardButton("ᴅᴇᴠ", url=f'http://t.me/akshat_xt')],
+            [InlineKeyboardButton("ᴅᴇᴠ", url=f'http://t.me/itachi007ff')],
             
         ]
         
